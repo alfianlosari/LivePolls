@@ -1,0 +1,658 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8BA554032A5AB658000C793E /* LivePollsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BA554022A5AB658000C793E /* LivePollsApp.swift */; };
+		8BA554072A5AB65B000C793E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8BA554062A5AB65B000C793E /* Assets.xcassets */; };
+		8BA5540A2A5AB65B000C793E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8BA554092A5AB65B000C793E /* Preview Assets.xcassets */; };
+		8BA554112A5ABCD3000C793E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8BA554102A5ABCD3000C793E /* GoogleService-Info.plist */; };
+		8BA554322A5ABDFD000C793E /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 8BA554312A5ABDFD000C793E /* FirebaseFirestore */; };
+		8BA554342A5ABDFD000C793E /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 8BA554332A5ABDFD000C793E /* FirebaseFirestoreSwift */; };
+		8BD195142A5AD6460091C9E8 /* Option.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BD195132A5AD6460091C9E8 /* Option.swift */; };
+		8BD195162A5AD6720091C9E8 /* Poll.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BD195152A5AD6720091C9E8 /* Poll.swift */; };
+		8BD195192A5ADD230091C9E8 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BD195182A5ADD230091C9E8 /* HomeView.swift */; };
+		8BD1951D2A5ADD4F0091C9E8 /* HomeVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BD1951C2A5ADD4F0091C9E8 /* HomeVM.swift */; };
+		8BD1951F2A5AE0220091C9E8 /* PollChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BD1951E2A5AE0220091C9E8 /* PollChartView.swift */; };
+		8BD195212A5AF3C10091C9E8 /* PollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BD195202A5AF3C10091C9E8 /* PollView.swift */; };
+		8BD195232A5AF3C90091C9E8 /* PollVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BD195222A5AF3C90091C9E8 /* PollVM.swift */; };
+		8BD1952A2A5AFCE60091C9E8 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BD195292A5AFCE60091C9E8 /* WidgetKit.framework */; };
+		8BD1952C2A5AFCE60091C9E8 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BD1952B2A5AFCE60091C9E8 /* SwiftUI.framework */; };
+		8BD1952F2A5AFCE60091C9E8 /* LivePollsWidgetBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BD1952E2A5AFCE60091C9E8 /* LivePollsWidgetBundle.swift */; };
+		8BD195312A5AFCE60091C9E8 /* LivePollsWidgetLiveActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BD195302A5AFCE60091C9E8 /* LivePollsWidgetLiveActivity.swift */; };
+		8BD195352A5AFCE90091C9E8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8BD195342A5AFCE90091C9E8 /* Assets.xcassets */; };
+		8BD195392A5AFCE90091C9E8 /* LivePollsWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 8BD195282A5AFCE60091C9E8 /* LivePollsWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		8BD1953F2A5AFD1F0091C9E8 /* LivePollsWidgetAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BD1953E2A5AFD1F0091C9E8 /* LivePollsWidgetAttributes.swift */; };
+		8BD195402A5AFD1F0091C9E8 /* LivePollsWidgetAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BD1953E2A5AFD1F0091C9E8 /* LivePollsWidgetAttributes.swift */; };
+		8BD195412A5AFD510091C9E8 /* Option.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BD195132A5AD6460091C9E8 /* Option.swift */; };
+		8BD195422A5AFD510091C9E8 /* Poll.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BD195152A5AD6720091C9E8 /* Poll.swift */; };
+		8BD195442A5AFD650091C9E8 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 8BD195432A5AFD650091C9E8 /* FirebaseFirestore */; };
+		8BD195462A5AFD650091C9E8 /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 8BD195452A5AFD650091C9E8 /* FirebaseFirestoreSwift */; };
+		8BD195482A5B00CB0091C9E8 /* PollChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BD1951E2A5AE0220091C9E8 /* PollChartView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8BD195372A5AFCE90091C9E8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8BA553F72A5AB658000C793E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8BD195272A5AFCE60091C9E8;
+			remoteInfo = LivePollsWidgetExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		8BD1953D2A5AFCE90091C9E8 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				8BD195392A5AFCE90091C9E8 /* LivePollsWidgetExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		8BA553FF2A5AB658000C793E /* LivePolls.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LivePolls.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8BA554022A5AB658000C793E /* LivePollsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LivePollsApp.swift; sourceTree = "<group>"; };
+		8BA554062A5AB65B000C793E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8BA554092A5AB65B000C793E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		8BA554102A5ABCD3000C793E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		8BD195132A5AD6460091C9E8 /* Option.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Option.swift; sourceTree = "<group>"; };
+		8BD195152A5AD6720091C9E8 /* Poll.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Poll.swift; sourceTree = "<group>"; };
+		8BD195182A5ADD230091C9E8 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		8BD1951C2A5ADD4F0091C9E8 /* HomeVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVM.swift; sourceTree = "<group>"; };
+		8BD1951E2A5AE0220091C9E8 /* PollChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PollChartView.swift; sourceTree = "<group>"; };
+		8BD195202A5AF3C10091C9E8 /* PollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PollView.swift; sourceTree = "<group>"; };
+		8BD195222A5AF3C90091C9E8 /* PollVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PollVM.swift; sourceTree = "<group>"; };
+		8BD195282A5AFCE60091C9E8 /* LivePollsWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = LivePollsWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		8BD195292A5AFCE60091C9E8 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		8BD1952B2A5AFCE60091C9E8 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		8BD1952E2A5AFCE60091C9E8 /* LivePollsWidgetBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LivePollsWidgetBundle.swift; sourceTree = "<group>"; };
+		8BD195302A5AFCE60091C9E8 /* LivePollsWidgetLiveActivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LivePollsWidgetLiveActivity.swift; sourceTree = "<group>"; };
+		8BD195342A5AFCE90091C9E8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8BD195362A5AFCE90091C9E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8BD1953E2A5AFD1F0091C9E8 /* LivePollsWidgetAttributes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LivePollsWidgetAttributes.swift; sourceTree = "<group>"; };
+		8BD195472A5AFE730091C9E8 /* LivePolls.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = LivePolls.entitlements; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8BA553FC2A5AB658000C793E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8BA554322A5ABDFD000C793E /* FirebaseFirestore in Frameworks */,
+				8BA554342A5ABDFD000C793E /* FirebaseFirestoreSwift in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8BD195252A5AFCE60091C9E8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8BD1952C2A5AFCE60091C9E8 /* SwiftUI.framework in Frameworks */,
+				8BD1952A2A5AFCE60091C9E8 /* WidgetKit.framework in Frameworks */,
+				8BD195442A5AFD650091C9E8 /* FirebaseFirestore in Frameworks */,
+				8BD195462A5AFD650091C9E8 /* FirebaseFirestoreSwift in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8BA553F62A5AB658000C793E = {
+			isa = PBXGroup;
+			children = (
+				8BA554012A5AB658000C793E /* LivePolls */,
+				8BD1952D2A5AFCE60091C9E8 /* LivePollsWidget */,
+				8BA554002A5AB658000C793E /* Products */,
+				8BA554302A5ABDFD000C793E /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		8BA554002A5AB658000C793E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8BA553FF2A5AB658000C793E /* LivePolls.app */,
+				8BD195282A5AFCE60091C9E8 /* LivePollsWidgetExtension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8BA554012A5AB658000C793E /* LivePolls */ = {
+			isa = PBXGroup;
+			children = (
+				8BD195472A5AFE730091C9E8 /* LivePolls.entitlements */,
+				8BD1951B2A5ADD410091C9E8 /* Observables */,
+				8BD195172A5ADD160091C9E8 /* Views */,
+				8BD195122A5AD6390091C9E8 /* Models */,
+				8BA554102A5ABCD3000C793E /* GoogleService-Info.plist */,
+				8BA554022A5AB658000C793E /* LivePollsApp.swift */,
+				8BA554062A5AB65B000C793E /* Assets.xcassets */,
+				8BA554082A5AB65B000C793E /* Preview Content */,
+			);
+			path = LivePolls;
+			sourceTree = "<group>";
+		};
+		8BA554082A5AB65B000C793E /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				8BA554092A5AB65B000C793E /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		8BA554302A5ABDFD000C793E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8BD195292A5AFCE60091C9E8 /* WidgetKit.framework */,
+				8BD1952B2A5AFCE60091C9E8 /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8BD195122A5AD6390091C9E8 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				8BD195132A5AD6460091C9E8 /* Option.swift */,
+				8BD195152A5AD6720091C9E8 /* Poll.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		8BD195172A5ADD160091C9E8 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				8BD195182A5ADD230091C9E8 /* HomeView.swift */,
+				8BD1951E2A5AE0220091C9E8 /* PollChartView.swift */,
+				8BD195202A5AF3C10091C9E8 /* PollView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		8BD1951B2A5ADD410091C9E8 /* Observables */ = {
+			isa = PBXGroup;
+			children = (
+				8BD1951C2A5ADD4F0091C9E8 /* HomeVM.swift */,
+				8BD195222A5AF3C90091C9E8 /* PollVM.swift */,
+			);
+			path = Observables;
+			sourceTree = "<group>";
+		};
+		8BD1952D2A5AFCE60091C9E8 /* LivePollsWidget */ = {
+			isa = PBXGroup;
+			children = (
+				8BD1952E2A5AFCE60091C9E8 /* LivePollsWidgetBundle.swift */,
+				8BD195302A5AFCE60091C9E8 /* LivePollsWidgetLiveActivity.swift */,
+				8BD1953E2A5AFD1F0091C9E8 /* LivePollsWidgetAttributes.swift */,
+				8BD195342A5AFCE90091C9E8 /* Assets.xcassets */,
+				8BD195362A5AFCE90091C9E8 /* Info.plist */,
+			);
+			path = LivePollsWidget;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8BA553FE2A5AB658000C793E /* LivePolls */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8BA5540D2A5AB65B000C793E /* Build configuration list for PBXNativeTarget "LivePolls" */;
+			buildPhases = (
+				8BA553FB2A5AB658000C793E /* Sources */,
+				8BA553FC2A5AB658000C793E /* Frameworks */,
+				8BA553FD2A5AB658000C793E /* Resources */,
+				8BD1953D2A5AFCE90091C9E8 /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8BD195382A5AFCE90091C9E8 /* PBXTargetDependency */,
+			);
+			name = LivePolls;
+			packageProductDependencies = (
+				8BA554312A5ABDFD000C793E /* FirebaseFirestore */,
+				8BA554332A5ABDFD000C793E /* FirebaseFirestoreSwift */,
+			);
+			productName = LivePolls;
+			productReference = 8BA553FF2A5AB658000C793E /* LivePolls.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8BD195272A5AFCE60091C9E8 /* LivePollsWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8BD1953A2A5AFCE90091C9E8 /* Build configuration list for PBXNativeTarget "LivePollsWidgetExtension" */;
+			buildPhases = (
+				8BD195242A5AFCE60091C9E8 /* Sources */,
+				8BD195252A5AFCE60091C9E8 /* Frameworks */,
+				8BD195262A5AFCE60091C9E8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LivePollsWidgetExtension;
+			packageProductDependencies = (
+				8BD195432A5AFD650091C9E8 /* FirebaseFirestore */,
+				8BD195452A5AFD650091C9E8 /* FirebaseFirestoreSwift */,
+			);
+			productName = LivePollsWidgetExtension;
+			productReference = 8BD195282A5AFCE60091C9E8 /* LivePollsWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8BA553F72A5AB658000C793E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					8BA553FE2A5AB658000C793E = {
+						CreatedOnToolsVersion = 15.0;
+					};
+					8BD195272A5AFCE60091C9E8 = {
+						CreatedOnToolsVersion = 15.0;
+					};
+				};
+			};
+			buildConfigurationList = 8BA553FA2A5AB658000C793E /* Build configuration list for PBXProject "LivePolls" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8BA553F62A5AB658000C793E;
+			packageReferences = (
+				8BA554212A5ABDE0000C793E /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
+			productRefGroup = 8BA554002A5AB658000C793E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8BA553FE2A5AB658000C793E /* LivePolls */,
+				8BD195272A5AFCE60091C9E8 /* LivePollsWidgetExtension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8BA553FD2A5AB658000C793E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8BA5540A2A5AB65B000C793E /* Preview Assets.xcassets in Resources */,
+				8BA554072A5AB65B000C793E /* Assets.xcassets in Resources */,
+				8BA554112A5ABCD3000C793E /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8BD195262A5AFCE60091C9E8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8BD195352A5AFCE90091C9E8 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8BA553FB2A5AB658000C793E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8BD195162A5AD6720091C9E8 /* Poll.swift in Sources */,
+				8BD195232A5AF3C90091C9E8 /* PollVM.swift in Sources */,
+				8BD1953F2A5AFD1F0091C9E8 /* LivePollsWidgetAttributes.swift in Sources */,
+				8BD195142A5AD6460091C9E8 /* Option.swift in Sources */,
+				8BD1951D2A5ADD4F0091C9E8 /* HomeVM.swift in Sources */,
+				8BD195212A5AF3C10091C9E8 /* PollView.swift in Sources */,
+				8BD1951F2A5AE0220091C9E8 /* PollChartView.swift in Sources */,
+				8BD195192A5ADD230091C9E8 /* HomeView.swift in Sources */,
+				8BA554032A5AB658000C793E /* LivePollsApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8BD195242A5AFCE60091C9E8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8BD195422A5AFD510091C9E8 /* Poll.swift in Sources */,
+				8BD195412A5AFD510091C9E8 /* Option.swift in Sources */,
+				8BD1952F2A5AFCE60091C9E8 /* LivePollsWidgetBundle.swift in Sources */,
+				8BD195312A5AFCE60091C9E8 /* LivePollsWidgetLiveActivity.swift in Sources */,
+				8BD195482A5B00CB0091C9E8 /* PollChartView.swift in Sources */,
+				8BD195402A5AFD1F0091C9E8 /* LivePollsWidgetAttributes.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8BD195382A5AFCE90091C9E8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8BD195272A5AFCE60091C9E8 /* LivePollsWidgetExtension */;
+			targetProxy = 8BD195372A5AFCE90091C9E8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		8BA5540B2A5AB65B000C793E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		8BA5540C2A5AB65B000C793E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8BA5540E2A5AB65B000C793E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = LivePolls/LivePolls.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"LivePolls/Preview Content\"";
+				DEVELOPMENT_TEAM = 5C2XD9H2JS;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = NO;
+				INFOPLIST_KEY_NSSupportsLiveActivities = YES;
+				INFOPLIST_KEY_NSSupportsLiveActivitiesFrequentUpdates = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.alfianlosari.livepolls;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8BA5540F2A5AB65B000C793E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = LivePolls/LivePolls.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"LivePolls/Preview Content\"";
+				DEVELOPMENT_TEAM = 5C2XD9H2JS;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = NO;
+				INFOPLIST_KEY_NSSupportsLiveActivities = YES;
+				INFOPLIST_KEY_NSSupportsLiveActivitiesFrequentUpdates = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.alfianlosari.livepolls;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		8BD1953B2A5AFCE90091C9E8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5C2XD9H2JS;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = LivePollsWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = LivePollsWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.alfianlosari.livepolls.LivePollsWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8BD1953C2A5AFCE90091C9E8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5C2XD9H2JS;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = LivePollsWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = LivePollsWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.alfianlosari.livepolls.LivePollsWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8BA553FA2A5AB658000C793E /* Build configuration list for PBXProject "LivePolls" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8BA5540B2A5AB65B000C793E /* Debug */,
+				8BA5540C2A5AB65B000C793E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8BA5540D2A5AB65B000C793E /* Build configuration list for PBXNativeTarget "LivePolls" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8BA5540E2A5AB65B000C793E /* Debug */,
+				8BA5540F2A5AB65B000C793E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8BD1953A2A5AFCE90091C9E8 /* Build configuration list for PBXNativeTarget "LivePollsWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8BD1953B2A5AFCE90091C9E8 /* Debug */,
+				8BD1953C2A5AFCE90091C9E8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		8BA554212A5ABDE0000C793E /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.11.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		8BA554312A5ABDFD000C793E /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8BA554212A5ABDE0000C793E /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		8BA554332A5ABDFD000C793E /* FirebaseFirestoreSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8BA554212A5ABDE0000C793E /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestoreSwift;
+		};
+		8BD195432A5AFD650091C9E8 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8BA554212A5ABDE0000C793E /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		8BD195452A5AFD650091C9E8 /* FirebaseFirestoreSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8BA554212A5ABDE0000C793E /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestoreSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 8BA553F72A5AB658000C793E /* Project object */;
+}

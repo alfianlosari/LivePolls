@@ -2,7 +2,7 @@
 
 ![alt text](https://i.ibb.co/gZBYj5t/promo.png)
 
-The app provides features where users can create a poll with multiple options, share, and vote iin realtime. 
+The app provides features where users can create a poll with multiple options, share, and vote in realtime. 
 
 It also supports the new iOS Live Activity feature using ActivityKit + APNS to display real time poll activity charts from Lock Screen, Dynamic Island, iOS 17 Standby screen.
 

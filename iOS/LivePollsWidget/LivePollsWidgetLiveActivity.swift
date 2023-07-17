@@ -83,9 +83,11 @@ extension LivePollsWidgetAttributes.ContentState {
     
 }
 
-#Preview("Notification", as: .content, using: LivePollsWidgetAttributes.preview) {
-   LivePollsWidgetLiveActivity()
-} contentStates: {
-    LivePollsWidgetAttributes.ContentState.first
-    LivePollsWidgetAttributes.ContentState.second
-}
+/*
+ #Preview("Notification", as: .content, using: LivePollsWidgetAttributes.preview) {
+ LivePollsWidgetLiveActivity()
+ } contentStates: {
+ LivePollsWidgetAttributes.ContentState.first
+ LivePollsWidgetAttributes.ContentState.second
+ }
+ */

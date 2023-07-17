@@ -10,7 +10,6 @@
 		8BA554032A5AB658000C793E /* LivePollsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BA554022A5AB658000C793E /* LivePollsApp.swift */; };
 		8BA554072A5AB65B000C793E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8BA554062A5AB65B000C793E /* Assets.xcassets */; };
 		8BA5540A2A5AB65B000C793E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8BA554092A5AB65B000C793E /* Preview Assets.xcassets */; };
-		8BA554112A5ABCD3000C793E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8BA554102A5ABCD3000C793E /* GoogleService-Info.plist */; };
 		8BA554322A5ABDFD000C793E /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 8BA554312A5ABDFD000C793E /* FirebaseFirestore */; };
 		8BA554342A5ABDFD000C793E /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 8BA554332A5ABDFD000C793E /* FirebaseFirestoreSwift */; };
 		8BD195142A5AD6460091C9E8 /* Option.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BD195132A5AD6460091C9E8 /* Option.swift */; };
@@ -64,7 +63,6 @@
 		8BA554022A5AB658000C793E /* LivePollsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LivePollsApp.swift; sourceTree = "<group>"; };
 		8BA554062A5AB65B000C793E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8BA554092A5AB65B000C793E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		8BA554102A5ABCD3000C793E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		8BD195132A5AD6460091C9E8 /* Option.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Option.swift; sourceTree = "<group>"; };
 		8BD195152A5AD6720091C9E8 /* Poll.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Poll.swift; sourceTree = "<group>"; };
 		8BD195182A5ADD230091C9E8 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
@@ -133,7 +131,6 @@
 				8BD1951B2A5ADD410091C9E8 /* Observables */,
 				8BD195172A5ADD160091C9E8 /* Views */,
 				8BD195122A5AD6390091C9E8 /* Models */,
-				8BA554102A5ABCD3000C793E /* GoogleService-Info.plist */,
 				8BA554022A5AB658000C793E /* LivePollsApp.swift */,
 				8BA554062A5AB65B000C793E /* Assets.xcassets */,
 				8BA554082A5AB65B000C793E /* Preview Content */,
@@ -292,7 +289,6 @@
 			files = (
 				8BA5540A2A5AB65B000C793E /* Preview Assets.xcassets in Resources */,
 				8BA554072A5AB65B000C793E /* Assets.xcassets in Resources */,
-				8BA554112A5ABCD3000C793E /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
